@@ -1,19 +1,14 @@
 # Quick Start - Publish lên JitPack
 
-## Bước 1: Cập nhật thông tin GitHub
+## Bước 1: Push code lên GitHub
 
-1. Mở file `app/build.gradle`
-2. Thay `USERNAME` bằng username GitHub của bạn ở 2 chỗ:
-   - `groupId = 'com.github.USERNAME'` → `groupId = 'com.github.YOUR_USERNAME'`
-   - `url = 'https://github.com/USERNAME/CommonScreenSDK'` → `url = 'https://github.com/YOUR_USERNAME/CommonScreenSDK'`
-
-## Bước 2: Push code lên GitHub
+Repository: [https://github.com/hoangvannhatanh/CommonScreenSDK](https://github.com/hoangvannhatanh/CommonScreenSDK)
 
 ```bash
 git init
 git add .
 git commit -m "Initial commit - CommonScreenSDK"
-git remote add origin https://github.com/YOUR_USERNAME/CommonScreenSDK.git
+git remote add origin https://github.com/hoangvannhatanh/CommonScreenSDK.git
 git branch -M main
 git push -u origin main
 ```
@@ -41,7 +36,7 @@ git push origin v1.0.0
 
 Sau vài phút, kiểm tra tại:
 ```
-https://jitpack.io/#YOUR_USERNAME/CommonScreenSDK
+https://jitpack.io/#hoangvannhatanh/CommonScreenSDK
 ```
 
 Nếu build thành công, bạn sẽ thấy version `v1.0.0` có sẵn.
@@ -64,7 +59,7 @@ dependencyResolutionManagement {
 ```gradle
 // build.gradle (app module)
 dependencies {
-    implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:v1.0.0'
+    implementation 'com.github.hoangvannhatanh:CommonScreenSDK:v1.0.0'
 }
 ```
 

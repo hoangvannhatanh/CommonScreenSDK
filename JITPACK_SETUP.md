@@ -1,17 +1,21 @@
 # Hướng dẫn Setup JitPack
 
-> **⚠️ LƯU Ý:** Đảm bảo bạn đã thay `YOUR_USERNAME` bằng username GitHub thực tế trong file `app/build.gradle` trước khi push code!
+## Repository
+
+GitHub: [https://github.com/hoangvannhatanh/CommonScreenSDK](https://github.com/hoangvannhatanh/CommonScreenSDK)
+
+JitPack: [https://jitpack.io/#hoangvannhatanh/CommonScreenSDK](https://jitpack.io/#hoangvannhatanh/CommonScreenSDK)
 
 ## Bước 1: Push code lên GitHub
 
-1. Tạo repository mới trên GitHub (ví dụ: `CommonScreenSDK`)
+1. Repository đã được tạo: `hoangvannhatanh/CommonScreenSDK`
 2. Push code lên GitHub:
 
 ```bash
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/CommonScreenSDK.git
+git remote add origin https://github.com/hoangvannhatanh/CommonScreenSDK.git
 git push -u origin main
 ```
 
@@ -36,17 +40,10 @@ git push origin v1.0.0
 
 ## Bước 3: Cấu hình trong build.gradle
 
-**QUAN TRỌNG:** Trước khi push, cần cập nhật `app/build.gradle`:
-
-1. Thay `USERNAME` bằng username GitHub của bạn trong:
-   - `groupId = 'com.github.USERNAME'`
-   - `url = 'https://github.com/USERNAME/CommonScreenSDK'`
-
-2. Hoặc nếu muốn sử dụng format JitPack mặc định:
-   ```gradle
-   groupId = 'com.github.YOUR_USERNAME'
-   artifactId = 'CommonScreenSDK' // Tên repository
-   ```
+**Đã được cấu hình:** `app/build.gradle` đã được cấu hình với:
+- `groupId = 'com.github.hoangvannhatanh'`
+- `artifactId = 'CommonScreenSDK'`
+- `url = 'https://github.com/hoangvannhatanh/CommonScreenSDK'`
 
 ## Bước 4: Sử dụng trong dự án khác
 
@@ -84,28 +81,28 @@ Trong `build.gradle` (app module):
 ```gradle
 dependencies {
     // Sử dụng tag version
-    implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:v1.0.0'
+    implementation 'com.github.hoangvannhatanh:CommonScreenSDK:v1.0.0'
     
     // Hoặc sử dụng commit hash
-    // implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:COMMIT_HASH'
+    // implementation 'com.github.hoangvannhatanh:CommonScreenSDK:COMMIT_HASH'
     
     // Hoặc sử dụng branch
-    // implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:main-SNAPSHOT'
+    // implementation 'com.github.hoangvannhatanh:CommonScreenSDK:main-SNAPSHOT'
 }
 ```
 
 ## Format JitPack
 
 JitPack sử dụng format:
-- **GroupId**: `com.github.USERNAME`
-- **ArtifactId**: `REPOSITORY_NAME` (hoặc tên module nếu có)
+- **GroupId**: `com.github.hoangvannhatanh`
+- **ArtifactId**: `CommonScreenSDK` (tên repository)
 - **Version**: Tag name (v1.0.0) hoặc commit hash
 
 ## Kiểm tra JitPack Build
 
 Sau khi push tag, bạn có thể kiểm tra build status tại:
 ```
-https://jitpack.io/#YOUR_USERNAME/CommonScreenSDK
+https://jitpack.io/#hoangvannhatanh/CommonScreenSDK
 ```
 
 Nếu build thành công, bạn sẽ thấy version có sẵn để sử dụng.

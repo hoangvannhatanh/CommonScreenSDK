@@ -2,20 +2,20 @@
 
 ## Trước khi push code
 
-- [ ] Thay `USERNAME` bằng username GitHub thực tế trong `app/build.gradle` (2 chỗ)
+- [x] Đã cấu hình `app/build.gradle` với `hoangvannhatanh`
 - [ ] Kiểm tra `versionName` trong `app/build.gradle` đúng với version bạn muốn
 - [ ] Đảm bảo tất cả code đã được commit
 - [ ] Kiểm tra `.gitignore` đã có đầy đủ các file cần ignore
 
 ## Setup GitHub Repository
 
-- [ ] Tạo repository mới trên GitHub (ví dụ: `CommonScreenSDK`)
-- [ ] Push code lên GitHub:
+- [x] Repository đã được tạo: `hoangvannhatanh/CommonScreenSDK`
+- [ ] Push code lên GitHub (nếu chưa push):
   ```bash
   git init
   git add .
   git commit -m "Initial commit"
-  git remote add origin https://github.com/YOUR_USERNAME/CommonScreenSDK.git
+  git remote add origin https://github.com/hoangvannhatanh/CommonScreenSDK.git
   git push -u origin main
   ```
 
@@ -31,13 +31,13 @@
 ## Kiểm tra JitPack
 
 - [ ] Đợi 2-5 phút sau khi push tag
-- [ ] Kiểm tra build status tại: `https://jitpack.io/#YOUR_USERNAME/CommonScreenSDK`
+- [ ] Kiểm tra build status tại: `https://jitpack.io/#hoangvannhatanh/CommonScreenSDK`
 - [ ] Xác nhận version `v1.0.0` (hoặc version bạn đã tạo) có sẵn và build thành công
 
 ## Test trong dự án khác
 
 - [ ] Thêm JitPack repository vào dự án test
-- [ ] Thêm dependency: `implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:v1.0.0'`
+- [ ] Thêm dependency: `implementation 'com.github.hoangvannhatanh:CommonScreenSDK:v1.0.0'`
 - [ ] Sync và build dự án
 - [ ] Test import và sử dụng SDK
 - [ ] Kiểm tra không có lỗi

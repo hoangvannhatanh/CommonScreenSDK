@@ -2,7 +2,11 @@
 
 SDK cho màn hình Splash Screen với animation và callback hỗ trợ.
 
-> **⚠️ QUAN TRỌNG:** Trước khi sử dụng, vui lòng thay `YOUR_USERNAME` trong các file cấu hình bằng username GitHub thực tế của bạn!
+## Repository
+
+GitHub: [https://github.com/hoangvannhatanh/CommonScreenSDK](https://github.com/hoangvannhatanh/CommonScreenSDK)
+
+JitPack: [https://jitpack.io/#hoangvannhatanh/CommonScreenSDK](https://jitpack.io/#hoangvannhatanh/CommonScreenSDK)
 
 ## Cài đặt
 
@@ -37,22 +41,20 @@ allprojects {
 
 ```gradle
 dependencies {
-    // Thay YOUR_USERNAME bằng username GitHub của bạn
-    // Thay v1.0.0 bằng tag/version bạn muốn sử dụng
-    implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:v1.0.0'
+    // Sử dụng tag version (khuyến nghị)
+    implementation 'com.github.hoangvannhatanh:CommonScreenSDK:v1.0.0'
     
     // Hoặc sử dụng commit hash:
-    // implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:COMMIT_HASH'
+    // implementation 'com.github.hoangvannhatanh:CommonScreenSDK:COMMIT_HASH'
     
     // Hoặc sử dụng branch (không khuyến nghị):
-    // implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:main-SNAPSHOT'
+    // implementation 'com.github.hoangvannhatanh:CommonScreenSDK:main-SNAPSHOT'
 }
 ```
 
 **Lưu ý:** 
-- Thay `YOUR_USERNAME` bằng username GitHub thực tế của bạn
 - Đảm bảo đã tạo tag/release trên GitHub (ví dụ: `v1.0.0`)
-- Kiểm tra build status tại: `https://jitpack.io/#YOUR_USERNAME/CommonScreenSDK`
+- Kiểm tra build status tại: [https://jitpack.io/#hoangvannhatanh/CommonScreenSDK](https://jitpack.io/#hoangvannhatanh/CommonScreenSDK)
 
 ### Cách 2: Sử dụng như một module local
 

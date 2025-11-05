@@ -26,5 +26,5 @@ git push origin "$Tag"
 
 Write-Host "Tag $Tag đã được tạo và push lên GitHub!" -ForegroundColor Green
 Write-Host "JitPack sẽ tự động build trong vài phút." -ForegroundColor Yellow
-Write-Host "Kiểm tra tại: https://jitpack.io/#YOUR_USERNAME/CommonScreenSDK" -ForegroundColor Cyan
+Write-Host "Kiểm tra tại: https://jitpack.io/#hoangvannhatanh/CommonScreenSDK" -ForegroundColor Cyan
 

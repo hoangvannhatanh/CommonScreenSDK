@@ -32,5 +32,5 @@ git push origin "${TAG}"
 
 echo "Tag ${TAG} đã được tạo và push lên GitHub!"
 echo "JitPack sẽ tự động build trong vài phút."
-echo "Kiểm tra tại: https://jitpack.io/#YOUR_USERNAME/CommonScreenSDK"
+echo "Kiểm tra tại: https://jitpack.io/#hoangvannhatanh/CommonScreenSDK"
 
