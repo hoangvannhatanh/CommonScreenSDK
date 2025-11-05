@@ -63,14 +63,13 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.nhatanh.commonscreensdk'
-                artifactId = 'commonscreensdk'
-                version = '1.0.0'
+                groupId = 'com.github.hoangvannhatanh'
+                artifactId = 'CommonScreenSDK'
+                version = android.defaultConfig.versionName
 
                 pom {
                     name = 'CommonScreenSDK'
-                    description = 'SDK cho màn hình Splash Screen với animation và callback hỗ trợ'
-                    url = 'https://github.com/yourusername/CommonScreenSDK'
+                    url = 'https://github.com/hoangvannhatanh/CommonScreenSDK'
                     licenses {
                         license {
                             name = 'The Apache License, Version 2.0'

@@ -2,9 +2,59 @@
 
 SDK cho màn hình Splash Screen với animation và callback hỗ trợ.
 
+> **⚠️ QUAN TRỌNG:** Trước khi sử dụng, vui lòng thay `YOUR_USERNAME` trong các file cấu hình bằng username GitHub thực tế của bạn!
+
 ## Cài đặt
 
-### Cách 1: Sử dụng như một module local
+### Cách 1: Sử dụng từ JitPack (Khuyến nghị)
+
+**Bước 1:** Thêm JitPack repository vào `settings.gradle` hoặc `build.gradle` (project level):
+
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // Thêm dòng này
+    }
+}
+```
+
+Hoặc với `build.gradle` cũ:
+
+```gradle
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+**Bước 2:** Thêm dependency vào `build.gradle` (app module):
+
+```gradle
+dependencies {
+    // Thay YOUR_USERNAME bằng username GitHub của bạn
+    // Thay v1.0.0 bằng tag/version bạn muốn sử dụng
+    implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:v1.0.0'
+    
+    // Hoặc sử dụng commit hash:
+    // implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:COMMIT_HASH'
+    
+    // Hoặc sử dụng branch (không khuyến nghị):
+    // implementation 'com.github.YOUR_USERNAME:CommonScreenSDK:main-SNAPSHOT'
+}
+```
+
+**Lưu ý:** 
+- Thay `YOUR_USERNAME` bằng username GitHub thực tế của bạn
+- Đảm bảo đã tạo tag/release trên GitHub (ví dụ: `v1.0.0`)
+- Kiểm tra build status tại: `https://jitpack.io/#YOUR_USERNAME/CommonScreenSDK`
+
+### Cách 2: Sử dụng như một module local
 
 1. Copy thư mục `app` vào dự án của bạn hoặc thêm như một submodule
 2. Trong `settings.gradle` của dự án:
@@ -35,7 +85,7 @@ include ':app', ':commonscreensdk'
 project(':commonscreensdk').projectDir = new File('../CommonScreenSDK/commonscreensdk')
 ```
 
-### Cách 2: Publish lên Maven Local (để sử dụng trong các dự án khác)
+### Cách 3: Publish lên Maven Local (để sử dụng trong các dự án khác)
 
 1. Publish SDK:
 ```bash
